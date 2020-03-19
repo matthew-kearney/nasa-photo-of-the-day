@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
  import axios from "axios";
  import Info from "./Data";
-
  export default function PhotoCard(){
      const [photoData, setPhotoData] = useState({});
 
@@ -17,10 +16,10 @@ import React, { useState, useEffect } from "react";
      }, []);
 
      return (
-
+ 
          <div className = "photo-card">
 
-             <img src = {photoData.url} className = "space-img"/>
+             <img src = {photoData.url} className = "space-img" alt = 'space img'/>
 
              <Info
              title = {photoData.title}
